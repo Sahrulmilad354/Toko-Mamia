@@ -1,0 +1,254 @@
+// Font
+@import url("https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Tangerine:wght@400;700&display=swap");
+
+// Variabel
+$primaryColor: #4583c3;
+$secondaryColor: #65c9ff;
+$tertiarycolor: #a8ccf2;
+$textColor: #3c4f5c;
+
+// Mixin
+@mixin tombol {
+  display: inline-block;
+  color: black;
+  background-color: $secondaryColor;
+  border-radius: 2em;
+  padding: 0.5em 2em;
+  text-decoration: none;
+}
+
+// Styles
+body {
+  background-image: url(../../img/background/01.png);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 50vmax;
+}
+
+// Navbar
+.custom-nav {
+  font-family: "Charm", cursive;
+  .navbar-brand {
+    img {
+      width: 150px;
+      height: 40px;
+    }
+  }
+  #navbarScroll {
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          color: $primaryColor;
+          font-weight: 700;
+          margin-left: 1em;
+          border-radius: 2em;
+          border: 1px solid transparent;
+          transition: 0.5s color ease;
+
+          &:hover {
+            color: white;
+            border-radius: 2em;
+            border: 1px solid $primaryColor;
+            background-color: $primaryColor;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Header
+.custom-header {
+  margin-top: 10em;
+  h2 {
+    font-weight: 400;
+    font-size: 2rem;
+    color: $secondaryColor;
+    white-space: nowrap;
+  }
+
+  h3 {
+    font-family: "Charm", cursive;
+    font-weight: 700;
+    font-size: 3rem;
+    color: $primaryColor;
+  }
+
+  p {
+    color: $textColor;
+    font-size: 1rem;
+    margin-top: 2em;
+    text-align: justify;
+  }
+
+  h5 {
+    color: $tertiarycolor;
+    margin-bottom: 1rem;
+  }
+
+  a {
+    @include tombol;
+    border: 1px solid transparent;
+    transition: 0.5s ease;
+
+    &:hover {
+      color: $secondaryColor;
+      border: 1px solid $secondaryColor;
+      background-color: transparent;
+    }
+  }
+}
+
+// Produk Terlaris
+.custom-produk {
+  h2 {
+    color: $primaryColor;
+    font-family: "Charm", cursive;
+    font-weight: 700;
+  }
+
+  h3 {
+    font-family: "Charm", cursive;
+    color: $primaryColor;
+  }
+
+  h5 {
+    color: $tertiarycolor;
+  }
+
+  p {
+    text-align: justify;
+    color: $textColor;
+  }
+
+  a {
+    @include tombol;
+    border: 1px solid transparent;
+    transition: 0.5s ease;
+
+    &:hover {
+      color: $secondaryColor;
+      border: 1px solid $secondaryColor;
+      background-color: transparent;
+    }
+  }
+
+  // Custom Mengapa Kami
+  .custom-mengapa {
+    h2 {
+      color: $primaryColor;
+    }
+  }
+}
+
+// Footer
+.footer {
+  height: 250px;
+  background-image: url(../../img/background/02.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 0 0;
+  margin-top: 2rem;
+  padding: 3rem;
+
+  h6 {
+    font-family: "Ubuntu", sans-serif;
+    color: white;
+
+    &:hover {
+      color: $textColor;
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+
+      &:hover {
+        color: $textColor;
+      }
+    }
+  }
+
+  a {
+    font-family: "Ubuntu", sans-serif;
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+      color: $textColor;
+    }
+
+    h6 {
+      text-decoration: none;
+      color: white;
+
+      &:hover {
+        color: $textColor;
+      }
+    }
+  }
+}
+
+// RESPONSIBILITY UKURAN EXTRA SMALL (SMARTPHONE)
+@media (max-width: 480px) {
+  // Header
+  .header {
+    h2 {
+      margin-top: 9rem;
+      text-align: center;
+    }
+    h3 {
+      text-align: center;
+    }
+  }
+
+  // Footer
+  .footer {
+    height: 200px;
+    background-image: url(../../img/background/02.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 0 0;
+    margin-top: 2rem;
+    padding: 1rem;
+
+    h6 {
+      font-family: "Ubuntu", sans-serif;
+      color: white;
+      font-size: 50%;
+
+      &:hover {
+        color: $textColor;
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+
+        &:hover {
+          color: $textColor;
+        }
+      }
+    }
+
+    a {
+      font-family: "Ubuntu", sans-serif;
+      color: white;
+
+      &:hover {
+        color: $textColor;
+      }
+
+      h6 {
+        text-decoration: none;
+        color: white;
+
+        &:hover {
+          color: $textColor;
+        }
+      }
+    }
+  }
+}

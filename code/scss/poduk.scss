@@ -1,0 +1,393 @@
+// Font
+@import url("https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Tangerine:wght@400;700&display=swap");
+
+// Variabel
+$primaryColor: #4583c3;
+$secondaryColor: #65c9ff;
+$tertiarycolor: #a8ccf2;
+$textColor: #3c4f5c;
+
+// Mixin
+@mixin tombol {
+  display: inline-block;
+  color: black;
+  background-color: $secondaryColor;
+  border-radius: 2em;
+  padding: 0.5em 2em;
+  text-decoration: none;
+}
+
+// Navbar
+.custom-nav {
+  font-family: "Charm", cursive;
+  .navbar-brand {
+    img {
+      width: 150px;
+      height: 40px;
+    }
+  }
+  #navbarScroll {
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          color: $primaryColor;
+          font-weight: 700;
+          margin-left: 1em;
+          border-radius: 2em;
+          border: 1px solid transparent;
+          transition: 0.5s color ease;
+
+          &:hover {
+            color: white;
+            border-radius: 2em;
+            border: 1px solid $primaryColor;
+            background-color: $primaryColor;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Custom Pengenalan
+.custom-pengenalan {
+  h2 {
+    color: $primaryColor;
+  }
+
+  h3 {
+    font-family: "Charm", cursive;
+    color: $primaryColor;
+  }
+
+  h5 {
+    color: $tertiarycolor;
+  }
+
+  p {
+    text-align: justify;
+    color: $textColor;
+  }
+
+  a {
+    @include tombol;
+    border: 1px solid transparent;
+    transition: 0.5s ease;
+
+    &:hover {
+      color: $secondaryColor;
+      border: 1px solid $secondaryColor;
+      background-color: transparent;
+    }
+  }
+}
+
+// Custom Manfaat
+.custom-manfaat {
+  h2 {
+    color: $primaryColor;
+    font-family: "Charm", cursive;
+    font-weight: 700;
+  }
+
+  h6 {
+    color: $textColor;
+  }
+}
+
+// Custom Bahan
+.custom-bahan {
+  h2 {
+    color: $primaryColor;
+    font-family: "Charm", cursive;
+    font-weight: 700;
+  }
+
+  p {
+    color: $textColor;
+    text-align: center;
+  }
+}
+
+// Custom Cara Pemakaian
+.custom-cara {
+  h2 {
+    color: $primaryColor;
+    font-family: "Charm", cursive;
+    font-weight: 700;
+  }
+
+  p {
+    color: $textColor;
+    text-align: justify;
+  }
+}
+
+// Custom Varian
+.custom-varian {
+  h3 {
+    color: $primaryColor;
+    font-family: "Charm", cursive;
+    font-weight: 700;
+  }
+
+  p {
+    color: $textColor;
+    text-align: justify;
+  }
+}
+
+// Harga
+.custom-harga {
+  h2 {
+    color: $primaryColor;
+    font-family: "Charm", cursive;
+    font-weight: 700;
+  }
+
+  h3 {
+    color: $secondaryColor;
+    font-weight: 400;
+  }
+
+  a {
+    @include tombol;
+    border: 1px solid transparent;
+    transition: 0.5s ease;
+    font-size: 0.9rem;
+
+    &:hover {
+      color: $secondaryColor;
+      border: 1px solid $secondaryColor;
+      background-color: transparent;
+    }
+  }
+}
+
+// Footer
+.footer {
+  height: 250px;
+  background-image: url(../../img/background/02.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 0 0;
+  margin-top: 3rem;
+  padding: 3rem;
+
+  h6 {
+    font-family: "Ubuntu", sans-serif;
+    color: white;
+
+    &:hover {
+      color: $textColor;
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+
+      &:hover {
+        color: $textColor;
+      }
+    }
+  }
+
+  a {
+    font-family: "Ubuntu", sans-serif;
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+      color: $textColor;
+    }
+
+    h6 {
+      text-decoration: none;
+      color: white;
+
+      &:hover {
+        color: $textColor;
+      }
+    }
+  }
+}
+
+// Testimoni
+.testimoni {
+  h2 {
+    color: $primaryColor;
+    font-family: "Charm", cursive;
+    font-weight: 700;
+  }
+}
+
+// Carousel
+.carousel {
+  img {
+    margin-top: 3rem;
+  }
+
+  a {
+    color: white;
+    font-family: "Charm", cursive;
+  }
+}
+
+// Profil
+.profil {
+  margin-bottom: 3rem;
+
+  .btn {
+    color: $primaryColor;
+    font-family: "Charm", cursive;
+  }
+
+  .collapse {
+    p {
+      text-align: justify;
+    }
+  }
+
+  .card {
+    a {
+      text-decoration: none;
+      color: $primaryColor;
+
+      &:hover {
+        color: $secondaryColor;
+      }
+    }
+  }
+}
+
+// Maps
+.lokasi {
+  h2 {
+    color: $primaryColor;
+    font-family: "Charm", cursive;
+    margin-bottom: 1rem;
+  }
+}
+
+// RESPONSIBILITY UKURAN EXTRA SMALL (SMARTPHONE)
+@media (max-width: 480px) {
+  // Pengenalan
+  .custom-pengenalan {
+    a {
+      @include tombol;
+      border: 1px solid transparent;
+      transition: 0.5s ease;
+      font-size: 0.8rem;
+
+      &:hover {
+        color: $secondaryColor;
+        border: 1px solid $secondaryColor;
+        background-color: transparent;
+      }
+    }
+  }
+
+  // Harga
+  .custom-harga {
+    h2 {
+      color: $primaryColor;
+      font-family: "Charm", cursive;
+      font-weight: 700;
+    }
+
+    h3 {
+      color: $secondaryColor;
+      font-weight: 400;
+    }
+
+    a {
+      @include tombol;
+      border: 1px solid transparent;
+      transition: 0.5s ease;
+      font-size: 0.4rem;
+
+      &:hover {
+        color: $secondaryColor;
+        border: 1px solid $secondaryColor;
+        background-color: transparent;
+      }
+    }
+
+    .modal {
+      img {
+        width: 50%;
+      }
+
+      td,
+      th {
+        font-size: 80%;
+      }
+    }
+  }
+
+  // Footer
+  .footer {
+    height: 200px;
+    background-image: url(../../img/background/02.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 0 0;
+    margin-top: 2rem;
+    padding: 1rem;
+
+    h6 {
+      font-family: "Ubuntu", sans-serif;
+      color: white;
+      font-size: 50%;
+
+      &:hover {
+        color: $textColor;
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+
+        &:hover {
+          color: $textColor;
+        }
+      }
+    }
+
+    a {
+      font-family: "Ubuntu", sans-serif;
+      color: white;
+
+      &:hover {
+        color: $textColor;
+      }
+
+      h6 {
+        text-decoration: none;
+        color: white;
+
+        &:hover {
+          color: $textColor;
+        }
+      }
+    }
+  }
+
+  // Carousel
+  .carousel {
+    img {
+      margin-top: 3rem;
+    }
+  }
+
+  // Testimoni
+  .testimoni {
+    h2 {
+      color: $primaryColor;
+      font-family: "Charm", cursive;
+      font-weight: 700;
+    }
+  }
+}

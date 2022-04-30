@@ -1,0 +1,327 @@
+@import url("https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Tangerine:wght@400;700&display=swap");
+.custom-nav {
+  font-family: "Charm", cursive;
+}
+
+.custom-nav .navbar-brand img {
+  width: 150px;
+  height: 40px;
+}
+
+.custom-nav #navbarScroll .navbar-nav .nav-item .nav-link {
+  color: #4583c3;
+  font-weight: 700;
+  margin-left: 1em;
+  border-radius: 2em;
+  border: 1px solid transparent;
+  -webkit-transition: 0.5s color ease;
+  transition: 0.5s color ease;
+}
+
+.custom-nav #navbarScroll .navbar-nav .nav-item .nav-link:hover {
+  color: white;
+  border-radius: 2em;
+  border: 1px solid #4583c3;
+  background-color: #4583c3;
+}
+
+.custom-pengenalan h2 {
+  color: #4583c3;
+}
+
+.custom-pengenalan h3 {
+  font-family: "Charm", cursive;
+  color: #4583c3;
+}
+
+.custom-pengenalan h5 {
+  color: #a8ccf2;
+}
+
+.custom-pengenalan p {
+  text-align: justify;
+  color: #3c4f5c;
+}
+
+.custom-pengenalan a {
+  display: inline-block;
+  color: black;
+  background-color: #65c9ff;
+  border-radius: 2em;
+  padding: 0.5em 2em;
+  text-decoration: none;
+  border: 1px solid transparent;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.custom-pengenalan a:hover {
+  color: #65c9ff;
+  border: 1px solid #65c9ff;
+  background-color: transparent;
+}
+
+.custom-manfaat h2 {
+  color: #4583c3;
+  font-family: "Charm", cursive;
+  font-weight: 700;
+}
+
+.custom-manfaat h6 {
+  color: #3c4f5c;
+}
+
+.custom-bahan h2 {
+  color: #4583c3;
+  font-family: "Charm", cursive;
+  font-weight: 700;
+}
+
+.custom-bahan p {
+  color: #3c4f5c;
+  text-align: center;
+}
+
+.custom-cara h2 {
+  color: #4583c3;
+  font-family: "Charm", cursive;
+  font-weight: 700;
+}
+
+.custom-cara p {
+  color: #3c4f5c;
+  text-align: justify;
+}
+
+.custom-varian h3 {
+  color: #4583c3;
+  font-family: "Charm", cursive;
+  font-weight: 700;
+}
+
+.custom-varian p {
+  color: #3c4f5c;
+  text-align: justify;
+}
+
+.custom-harga h2 {
+  color: #4583c3;
+  font-family: "Charm", cursive;
+  font-weight: 700;
+}
+
+.custom-harga h3 {
+  color: #65c9ff;
+  font-weight: 400;
+}
+
+.custom-harga a {
+  display: inline-block;
+  color: black;
+  background-color: #65c9ff;
+  border-radius: 2em;
+  padding: 0.5em 2em;
+  text-decoration: none;
+  border: 1px solid transparent;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  font-size: 0.9rem;
+}
+
+.custom-harga a:hover {
+  color: #65c9ff;
+  border: 1px solid #65c9ff;
+  background-color: transparent;
+}
+
+.footer {
+  height: 250px;
+  background-image: url(../../img/background/02.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 0 0;
+  margin-top: 3rem;
+  padding: 3rem;
+}
+
+.footer h6 {
+  font-family: "Ubuntu", sans-serif;
+  color: white;
+}
+
+.footer h6:hover {
+  color: #3c4f5c;
+}
+
+.footer h6 a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer h6 a:hover {
+  color: #3c4f5c;
+}
+
+.footer a {
+  font-family: "Ubuntu", sans-serif;
+  color: white;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #3c4f5c;
+}
+
+.footer a h6 {
+  text-decoration: none;
+  color: white;
+}
+
+.footer a h6:hover {
+  color: #3c4f5c;
+}
+
+.testimoni h2 {
+  color: #4583c3;
+  font-family: "Charm", cursive;
+  font-weight: 700;
+}
+
+.carousel img {
+  margin-top: 3rem;
+}
+
+.carousel a {
+  color: white;
+  font-family: "Charm", cursive;
+}
+
+.profil {
+  margin-bottom: 3rem;
+}
+
+.profil .btn {
+  color: #4583c3;
+  font-family: "Charm", cursive;
+}
+
+.profil .collapse p {
+  text-align: justify;
+}
+
+.profil .card a {
+  text-decoration: none;
+  color: #4583c3;
+}
+
+.profil .card a:hover {
+  color: #65c9ff;
+}
+
+.lokasi h2 {
+  color: #4583c3;
+  font-family: "Charm", cursive;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 480px) {
+  .custom-pengenalan a {
+    display: inline-block;
+    color: black;
+    background-color: #65c9ff;
+    border-radius: 2em;
+    padding: 0.5em 2em;
+    text-decoration: none;
+    border: 1px solid transparent;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+    font-size: 0.8rem;
+  }
+  .custom-pengenalan a:hover {
+    color: #65c9ff;
+    border: 1px solid #65c9ff;
+    background-color: transparent;
+  }
+  .custom-harga h2 {
+    color: #4583c3;
+    font-family: "Charm", cursive;
+    font-weight: 700;
+  }
+  .custom-harga h3 {
+    color: #65c9ff;
+    font-weight: 400;
+  }
+  .custom-harga a {
+    display: inline-block;
+    color: black;
+    background-color: #65c9ff;
+    border-radius: 2em;
+    padding: 0.5em 2em;
+    text-decoration: none;
+    border: 1px solid transparent;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+    font-size: 0.4rem;
+  }
+  .custom-harga a:hover {
+    color: #65c9ff;
+    border: 1px solid #65c9ff;
+    background-color: transparent;
+  }
+  .custom-harga .modal img {
+    width: 50%;
+  }
+  .custom-harga .modal td,
+  .custom-harga .modal th {
+    font-size: 80%;
+  }
+  .footer {
+    height: 200px;
+    background-image: url(../../img/background/02.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 0 0;
+    margin-top: 2rem;
+    padding: 1rem;
+  }
+  .footer h6 {
+    font-family: "Ubuntu", sans-serif;
+    color: white;
+    font-size: 50%;
+  }
+  .footer h6:hover {
+    color: #3c4f5c;
+  }
+  .footer h6 a {
+    text-decoration: none;
+    color: white;
+  }
+  .footer h6 a:hover {
+    color: #3c4f5c;
+  }
+  .footer a {
+    font-family: "Ubuntu", sans-serif;
+    color: white;
+  }
+  .footer a:hover {
+    color: #3c4f5c;
+  }
+  .footer a h6 {
+    text-decoration: none;
+    color: white;
+  }
+  .footer a h6:hover {
+    color: #3c4f5c;
+  }
+  .carousel img {
+    margin-top: 3rem;
+  }
+  .testimoni h2 {
+    color: #4583c3;
+    font-family: "Charm", cursive;
+    font-weight: 700;
+  }
+}
+/*# sourceMappingURL=poduk.css.map */
